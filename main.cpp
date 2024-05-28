@@ -32,7 +32,7 @@ public:
             for (const auto & y : suit) {
                 Card card;
                 card.value = x;
-                card.suit = y;
+                card.suit = y;Card*
                 sortedCards.push_back(card);
             }
         }
