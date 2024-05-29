@@ -32,7 +32,7 @@ public:
     void displayDeck() {
         cout << "_____DISPLAY DECK STACK_____" << '\n';
         for (int i = 0; i < deckOfCards.size(); i++) {
-            cout << deckOfCards[i].getValue() << " of " << deckOfCards[i].getSuit() << '\n';
+            cout << deckOfCards[i].getValue() << " of " << deckOfCards[i].getSuit() << ", ";
         }
     }
 
@@ -52,7 +52,12 @@ public:
         topIndex = topIndex - 1;
         cout << "Element popped: " << temp.getValue() << " of " << temp.getSuit() << ", topIndex value: " << topIndex << ", Actual stack size: " << deckOfCards.size() << '\n';
     }
-};
 
+    void peek() {
+        cout << '\n';
+        cout << "_____TOP CARD_____" << '\n';
+        cout << "Last element: " << deckOfCards.back().getValue() << " of " << deckOfCards.back().getSuit() << "\n";
+    }
+};
 
 #endif //GO_FISH_DECKSTACK_H
