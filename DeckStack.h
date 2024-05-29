@@ -1,7 +1,3 @@
-//
-// Created by Cassidy on 5/28/24.
-//
-
 #ifndef GO_FISH_DECKSTACK_H
 #define GO_FISH_DECKSTACK_H
 
